@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/reactPortifolio/static/css/main.accbbf01.css",
+    "main.css": "/reactPortifolio/static/css/main.cfda72f6.css",
     "main.js": "/reactPortifolio/static/js/main.346032b3.js",
     "static/media/raleway.bold.ttf": "/reactPortifolio/static/media/raleway.bold.506249c98341196b206a.ttf",
     "index.html": "/reactPortifolio/index.html",
-    "main.accbbf01.css.map": "/reactPortifolio/static/css/main.accbbf01.css.map",
+    "main.cfda72f6.css.map": "/reactPortifolio/static/css/main.cfda72f6.css.map",
     "main.346032b3.js.map": "/reactPortifolio/static/js/main.346032b3.js.map"
   },
   "entrypoints": [
-    "static/css/main.accbbf01.css",
+    "static/css/main.cfda72f6.css",
     "static/js/main.346032b3.js"
   ]
 }
