@@ -1,5 +1,4 @@
 import '../Stylus/Card02.css';
-import Globe from './Globe';
 
 function card02() {
     return (
