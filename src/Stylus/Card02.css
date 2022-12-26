@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif; 
+  }
+
+.card02 {
+    height: 100vh;
+    width: 79.5%;
+    background-color: gray;
+    margin-left: 20.5%;
+}
+
+#second-page {
+    background-color: #161616;
+    width: 100%;
+    height: 100vh;
+    padding: 10px
+  }
+  #second-page header {
+   /* margin: 10px; */
+  }
+  #second-page header h1{
+   margin-bottom: 10px;
+  }
+  #second-page header h1::after {
+   display: block;
+   content: '';
+   background-color: #2ba5bb;
+   height: 5px;
+   width: 80px;
+  }
+  .information-personal {
+    display: flex;
+
+    margin: 10px;
+  }
+  .information-personal img {
+   border-radius: 50%;
+  }
+
+  #details-personal {
+    width: 60%;
+    margin-left: 15px;
+  }
+  #details-personal h1 {
+    font-size: 2rem;
+    color: aqua;
+  }
+  .personal {
+    display: flex;
+    margin-bottom: 20px;
+  }
+  .personal div {
+    width: 50%;
+  }
+
+  .p-01 div {
+    width: 250px;
+    border-bottom: 1px solid gray;
+  }
+  .p-02 div {
+    width: 250px;
+    border-bottom: 1px solid gray;
+  }
+
+@media screen and (max-width: 767px) {
+/*     .container {
+        display: flex;
+    } */
+
+    .card02 {
+        height: 170vh;
+        width: 100%;
+        background-color: gray;
+        margin-left: 0%;
+    }
+
+    #second-page {
+        background-color: #161616;
+        width: 100%;
+        height: 170vh;
+        padding: 10px;
+        /* border-bottom: 2px solid red; */
+    }
+
+    .information-personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 700px;
+        margin-top: 50px;
+    
+        border-radius: 10px;
+        box-shadow: 0 0 10px #2ba5bb, 0 0 5px #2ba5bb inset;
+      }
+
+
+      .information-personal img {
+       height: 200px;
+       width: 200px;
+       border-radius: 50%;
+      }
+
+      #details-personal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+      }
+
+      #details-personal h1 {
+        font-size: 1.6rem;
+      }
+
+      .personal {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+      }
+
+ /*      #indicator {
+        display: block;
+        background-color: red;
+        height: .35rem;
+        width: 0;
+        border: 5px solid lime;
+    } */
+
+
+}

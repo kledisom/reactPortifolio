@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card01 {
+    height: 100vh;
+    width: 79.5%;
+    background-color: gray;
+    margin-left: 20.5%;
+}
+
+.container {
+    display: flex;
+    background-color: aqua;
+ }
+
+ #primary-page {
+  width: 100%;
+ }
+
+#ico-menu {
+display: none;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+cursor: pointer;
+
+position: fixed;
+
+top: 1px;
+left: 1px;
+height: 60px;
+width: 60px;
+border-radius: 100%;
+
+background-color: #010d1e;
+padding: 10px;
+
+}
+
+#ico-menu div {
+border: 1px solid #000;
+background-color: #2ba5bb;
+height: 5px;
+width: 30px;
+
+margin: 5px 0px 0px 5px;
+}
+
+.title-main {
+    display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+
+   width: 100%;
+   height: 100vh;
+
+   background-image: url("https://blog.eseg.edu.br/wp-content/uploads/2020/06/original-6f96ee168ab0b419a98fea4f2dfc31fc.jpg");
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-attachment: fixed;
+   color: #fff; 
+   font-family: logos, sans-serif;
+   
+ }  
+
+ .hello {
+    border-right: 2px solid lime;
+    width: 380px;
+    height: 50px;
+    overflow: hidden;
+    overflow-wrap: normal;
+    font-size: 20px;
+    white-space: nowrap;
+    text-align: center;
+    background-color: #000;
+    color: #fff;   
+    opacity: 80%; 
+  }
+
+  .title-main h1 {
+    font-size: 3rem;
+    font-family: logos;
+    background-color: #000;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    opacity: 80%;
+  }
+
+  .hello h3 {
+    font-size: 2rem;
+    font-weight: 500;    
+  }
+
+  .cursor {
+    animation: efectCursor 500ms steps(40) infinite normal,
+      example 5s steps(40) 1s infinite both;
+  }
+
+  @keyframes example {
+    from {
+      width: 0;
+    }
+    /* background-color: #fff;}
+      to {background-color: violet;} */
+  }
+
+  @keyframes efectCursor {
+    from {
+      border-right-color: rgba(255, 255, 255, 0, 75);
+    }
+   to {
+   border-right-color: transparent;
+  } 
+  }
+
+@media screen and (max-width: 767px) {
+    .container {
+        display: flex;
+    }
+
+    .card01 {
+        height: 100vh;
+        width: 100%;
+        background-color: gray;
+        margin-left: 0%;
+    }
+
+    #ico-menu {
+        display: block;
+    }
+
+    .title-main h1 {
+        font-size: 2rem;
+        width: 250px;
+    }
+    
+    .hello h3 {
+        font-size: 1.5rem; 
+        margin-top: 5px;  
+    }
+    .hello {
+        width: 300px;
+        height: 40px;
+        margin-top: 20px;
+    }
+}

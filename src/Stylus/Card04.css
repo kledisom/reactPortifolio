@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif; 
+  }
+
+.card04 {
+    height: 100%;
+    width: 100%;
+    background-color: gray;
+    margin-left: 20.5%;
+}
+
+#fourth-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+    background: #161616;
+    width: 100%;
+    height: 100%;
+  }
+  #fourth-page header {
+    margin: 10px;
+   }
+   #fourth-page header h1{
+    margin-bottom: 10px;
+   }
+   #fourth-page header h1::after {
+    display: block;
+    content: '';
+    background-color: #2ba5bb;
+    height: 5px;
+    width: 100px;
+   }
+   .port-grid {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 250px 250px 250px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+
+    height: 65%;
+   }
+   .port-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    cursor: pointer;
+   }
+
+   .port-img {
+    background-color: pink;
+    height: 200px;
+    width: 100%;
+    border: 1px solid #fff;
+   }
+   .port-img:hover {
+    opacity: 0.5;
+   }
+   .port-item h3 {
+    width: 50%;
+    color:#000;
+    text-align: center;
+    background-color: #2ba5bb;
+   }
+
+@media screen and (max-width: 767px) {
+    .card04 {
+        height: 100%;
+        width: 100%;
+        background-color: gray;
+        margin-left: 0%;
+    }
+
+    #fourth-page {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+    
+        background: #161616;
+        width: 100%;
+        height: 100%;
+    }
+
+    .port-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px 250px;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 10px;
+    
+        height: 65%;
+    }
+    .port-item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .port-item h3 {
+        width: 50%;
+        color:#000;
+        text-align: center;
+        background-color: #2ba5bb;
+        margin: 10px;
+    }
+}

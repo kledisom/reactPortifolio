@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: #fff;
+    font-family: "Poppins", sans-serif; 
+  }
+
+.card03 {
+    height: 100vh;
+    width: 79.5%;
+    background-color: gray;
+    margin-left: 20.5%;
+}
+
+#third-page {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    
+    background-color: #161616;
+    width: 100%;
+    height: 100vh;
+  }
+  #third-page header {
+    margin: 10px;
+   }
+   #third-page header h1{
+    margin-bottom: 10px;
+   }
+   #third-page header h1::after {
+    display: block;
+    content: '';
+    background-color: #2ba5bb;
+    height: 5px;
+    width: 50px;
+   }
+   .skil-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+
+    height: 50%;
+   }
+   .grid-item {
+    width: 500px;
+   }
+   .percent {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+   }
+   .barra-progresso {
+    background-color: #fff;
+    height: 10px;
+    width: 100%;
+   }
+
+   /*estilo efeito da barra de progresso*/
+
+   #bar-html {
+    animation: bar-html 5s normal;
+    height: 9px;
+    width: 90%;
+    background-color: #2ba5bb;
+   }
+   #bar-node {
+    animation: bar-node 5s normal;
+    height: 9px;
+    width: 40%; 
+    background-color: #2ba5bb;
+   }
+   #bar-css {
+    animation: bar-css 5s normal;
+    height: 9px;
+    width: 70%; 
+    background-color: #2ba5bb;
+   }
+   #bar-bd {
+    animation: bar-bd 5s normal;
+    height: 9px;
+    width: 50%; 
+    background-color: #2ba5bb;
+   }
+   #bar-js {
+    animation: bar-js 5s normal;
+    height: 9px;
+    width: 80%; 
+    background-color: #2ba5bb;
+   }
+   #bar-wp {
+    animation: bar-wp 5s normal;
+    height: 9px;
+    width: 1%; 
+    background-color: #2ba5bb;
+   }
+   @keyframes bar-html {
+    0% {width: 0%}
+    90% {width: 90%}
+   }
+   @keyframes bar-node {
+    0% {width: 0%}
+    50% {width: 50%}
+   }
+   @keyframes bar-css {
+    0% {width: 0%}
+    70% {width: 70%}
+   }
+   @keyframes bar-bd {
+    0% {width: 0%}
+    50% {width: 50%}
+   }
+   @keyframes bar-js {
+    0% {width: 0%}
+    80% {width: 80%}
+   }
+   @keyframes bar-wp {
+    0% {width: 0%}
+    1% {width: 1%}
+   }
+
+@media screen and (max-width: 767px) {
+    .card03 {
+        height: 170vh;
+        width: 100%;
+        background-color: gray;
+        margin-left: 0%;
+    }
+
+    #third-page {
+        background-color: #161616;
+        width: 100%;
+        height: 170vh;
+        padding: 10px;
+    }
+
+    .skil-grid {
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px;
+        justify-content: space-around;
+        padding: 10px;
+        gap: 10px;
+    
+        height: 100%;
+    }
+
+    .grid-item {
+        width: 100%;
+    }
+
+
+}

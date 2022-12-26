@@ -1,0 +1,350 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+  @font-face {
+    font-family: logos;
+    src: url(../fonts/raleway.bold.ttf)
+  }
+
+  
+  .content {
+    /* border: 1px solid blue; */
+    height: 100%;
+    width: 20.5%;
+    position: fixed;
+    color: #fff;
+    background-color: blueviolet;
+   
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+
+    background-color: #010d1e;
+    height: 100%;
+    width: 20.4%;
+    color: #fff;
+  }
+
+  .perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+    height: 40%;
+    width: 100%;
+  }
+
+  #imgPerfil {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    margin-bottom: 15px;
+    border: 7px solid #272829;
+    cursor: pointer;
+  }
+
+  .perfil img {
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    margin: 10px;
+    border: 3px solid #212529;
+  }
+
+  .perfil nav {
+    display: flex;
+    justify-content: center;
+
+    height: 50px;
+    width: 100%;
+  }
+
+  .perfil nav img {
+    background-color: blue;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+  }
+  .perfil nav img:hover {
+    background-color: aqua;
+    height: 40px;
+    width: 40px;
+    
+  }
+
+  .topicos {
+    height: 250px;
+    width: 100%;
+    color: #272829;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  .topicos div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    margin-left: 10px;
+  }
+/*============ICONES DOS TOPICOS=============*/
+  .home i {
+    height: 20px;
+    width: 22px;
+  }
+  .home:hover, .user:hover, .resume:hover, .portfolio:hover {
+    color: #2ba5bb;
+  } 
+ 
+  .user i {
+    height: 15px;
+    width: 30px;
+  }
+  .resume i {
+    height: 30px;
+    width: 30px;
+  }
+  .portfolio i {
+    height: 26px;
+    width: 30px;
+  }
+
+  .topicos div a {
+    width: 50%;
+    text-decoration: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #3b4450;
+  }
+
+  .topicos a:hover{
+    color: #fff;
+  }
+
+/*^^^^^^^^^^^^ICONES DOS TOPICOS^^^^^^^^^^^^*/
+
+  aside footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    height: 100px;
+  }
+
+
+
+  
+/* @media screen and (max-width: 767px) {
+  .content {}
+} */
+
+/*=================================================*/
+@media screen and (max-width: 767px) {
+ 
+  .content {
+  display: none;
+   
+  }
+
+
+    .title-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;  
+  
+      width: 100%;
+      height: 100vh;
+    } 
+
+    .abaDois {
+      border: 1px solid red;
+    }
+
+  .perfil { 
+      display: flex;
+      /*align-items: center;*/
+      justify-content: flex-start;
+      flex-direction: column;
+      text-align: center;
+      height: auto;
+      width: 100%;
+
+    }
+
+    aside {  
+      display: none;
+      
+      background-color: #010d1e;
+      height: 100vh;
+      width: 20%;
+      color: #fff;
+      z-index: 1;
+
+    }
+
+    aside h4 {
+      display: none;
+    }
+
+    .perfil img {
+      height: 200px;
+      width: 100px;
+      border-radius: 50%;
+      margin: 10px;
+      border: 3px solid #272829;
+    }
+
+    #imgPerfil {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 7px solid #272829;
+    }
+
+    .perfil nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      height: 70%;
+      width: 100%;
+      
+    }
+
+    .hello {
+      border-right: 2px solid lime;
+      width: 250px;
+      height: 25px;
+      overflow: hidden;
+      overflow-wrap: normal;
+      font-size: 30px;
+      color: #000;
+      white-space: nowrap;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .title-main h1 {
+      width: 80%;
+      font-size: 2rem;
+      color: #fff;
+    }
+
+    .hello h3 {
+      color: #fff;
+      font-size: 20px;
+    }
+
+    .cursor {
+      animation: efectCursor 500ms steps(40) infinite normal,
+        example 5s steps(40) 1s normal both;
+    }
+  
+    @keyframes example {
+      from {
+        width: 0;
+      }
+      /* background-color: #fff;}
+        to {background-color: violet;} */
+    }
+  
+    @keyframes efectCursor {
+      from {
+        border-right-color: rgba(255, 255, 255, 0, 75);
+      }
+     to {
+     border-right-color: transparent;
+    } 
+    }
+
+    .topicos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      color: #272829;
+      margin-top: 10px;
+    }
+
+    .topicos nav {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: 100%;
+      width: 100%;
+    }
+
+    .topicos div a {
+      display: block;
+      font-size: 1px;
+    }
+
+    .home i {
+      height: 15px;
+      width: 22px;
+    }
+
+    .user i {
+      height: 15px;
+      width: 22px;
+    }
+    .resume i {
+      height: 30px;
+      width: 22px;
+    }
+    .portfolio i {
+      height: 20px;
+      width: 25px;
+      margin-left: 20px;
+    }
+
+    .topicos nav div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 25%;
+    }
+
+    .topicos nav i {
+      margin: 0;
+    }
+
+    aside footer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 11px;
+      text-align: center;
+      height: 40px;
+      margin-top: -4px;
+    }
+
+/*informações pessoais*/
+.information-personal {
+  /* border: 1px solid red; */
+}
+
+.information-personal img {
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+
+}
