@@ -7,13 +7,13 @@ function barLateral(props) {
             
             <aside id="menu">
                 <div className="perfil">
-                    <img id="imgPerfil" src="./img/60370756.jfif" onClick={props.onClick}/>
+                    <img id="imgPerfil" src="./img/60370756.jfif" onClick={props.onClick} alt=""/>
                     <h4>KLEDISOM OLIVEIRA</h4>
                     <nav>
-                        <img src="./ico/facebook.png" />
-                        <img src="./ico/instagram.png" />
-                        <img src="./ico/linkedin.png" />
-                        <img src="./ico/twitter.png" />
+                        <img src="./ico/facebook.png" alt=""/>
+                        <img src="./ico/instagram.png" alt="" />
+                        <img src="./ico/linkedin.png" alt=""/>
+                        <img src="./ico/twitter.png" alt=""/>
                     </nav>
                 </div>
 

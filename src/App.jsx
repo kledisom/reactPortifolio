@@ -8,12 +8,11 @@ import Card04 from './Components/Card04';
 
 
 function App() {
-  const [show, setShow] = useState(true);
 
   function teste() {  
     const icoMenu = document.querySelector('#ico-menu').style.display;
 
-    if(icoMenu == '' || icoMenu == 'block') {
+    if(icoMenu === '' || icoMenu === 'block') {
       document.querySelector('#ico-menu').style.display = 'none'
       document.querySelector('.content').style.display = 'flex';
       document.querySelector('aside').style.cssText = `
